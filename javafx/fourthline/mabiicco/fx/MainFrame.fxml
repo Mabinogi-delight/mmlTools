@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fourthline.mabiicco.fx.MainFrameController">
+<children><MenuBar BorderPane.alignment="CENTER">
+  <menus>
+    <Menu mnemonicParsing="false" text="File">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Close" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edit">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Delete" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help">
+      <items>
+        <MenuItem mnemonicParsing="false" text="About" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>
+<BorderPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="MainFrame.css">
+<center><GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="550.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="379.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><ScrollPane id="pianoRollView" fx:id="pianoRollView" hbarPolicy="ALWAYS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" vbarPolicy="ALWAYS" GridPane.columnIndex="1" GridPane.rowIndex="1">
+<content><Canvas fx:id="pianoRollViewCanvas" height="1000.0" width="1000.0" />
+</content>
+</ScrollPane>
+</children>
+</GridPane>
+</center>
+<bottom><TabPane id="trackViewCollection" maxHeight="-Infinity" prefHeight="100.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="200.0" BorderPane.alignment="CENTER">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+      <content>
+        <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+      <content>
+        <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
+</bottom>
+<top><ToolBar prefWidth="200.0" BorderPane.alignment="CENTER">
+  <items>
+    <Button focusTraversable="false" mnemonicParsing="false" text="Button" />
+  </items>
+</ToolBar>
+</top></BorderPane>
+</children>
+</VBox>
