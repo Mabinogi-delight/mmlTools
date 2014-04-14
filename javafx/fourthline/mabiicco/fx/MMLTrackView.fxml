@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fourthline.mabiicco.fx.MMLTrackViewController">
+<center><GridPane prefHeight="201.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="599.0" />
+<ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><ToggleButton fx:id="melodyButton" mnemonicParsing="false" text="メロディー" /><ToggleButton fx:id="chord1Button" mnemonicParsing="false" text="和音1" GridPane.rowIndex="1" /><ToggleButton fx:id="chord2Button" mnemonicParsing="false" text="和音2" GridPane.rowIndex="2" /><ToggleButton fx:id="songButton" mnemonicParsing="false" text="歌" GridPane.rowIndex="3" /><TextField fx:id="melodyText" GridPane.columnIndex="1" /><TextField fx:id="chord1Text" GridPane.columnIndex="1" GridPane.rowIndex="1" /><TextField fx:id="songText" GridPane.columnIndex="1" GridPane.rowIndex="3" /><TextField fx:id="chord2Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+</children>
+</GridPane>
+</center>
+<top><BorderPane prefHeight="33.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+<left><AnchorPane prefHeight="33.0" prefWidth="474.0" BorderPane.alignment="CENTER">
+<children><ComboBox fx:id="instComboBox" layoutX="14.0" layoutY="8.0" prefWidth="150.0" /><ComboBox fx:id="songComboBox" layoutX="184.0" layoutY="8.0" prefWidth="150.0" /><Button id="muteButton" layoutX="346.0" layoutY="8.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="29.0" style="-fx-background-image: url(&quot;img/play_solo.png&quot;);" /><Button id="allButton" layoutX="431.0" layoutY="8.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="29.0" style="-fx-background-image: url(&quot;img/play_solo.png&quot;);" /><Button id="soloButton" layoutX="388.0" layoutY="8.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="29.0" style="-fx-background-image: url(&quot;img/play_solo.png&quot;);" />
+</children></AnchorPane>
+</left>
+<right><Label id="rankView" text="Label" BorderPane.alignment="CENTER" />
+</right></BorderPane>
+</top></BorderPane>
